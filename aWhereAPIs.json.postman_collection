@@ -277,7 +277,7 @@
 		{
 			"id": "8e15cbdb-a130-9ab5-241e-e3747dc7b415",
 			"headers": "Authorization: Bearer {{aWhereAccessToken}}\n",
-			"url": "https://api.awhere.com/v2/agronomics/fields/field1/observations",
+			"url": "https://api.awhere.com/v2/weather/fields/field1/observations",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "GET",
