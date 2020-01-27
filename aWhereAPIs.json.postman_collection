@@ -546,37 +546,6 @@
 						"description": "####Request\nUse this API to calculate long-term averages for the weather for any set of days across any set of years (minumum 3). This is a very flexible API, and you're encouraged to review the [Weather Norms Documentation](http://developer.awhere.com/api/reference/weather/norms) for details.\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorization header holds the token, replacing the \"{{aWhereAccessToken}}\" part. \n"
 					},
 					"response": []
-				},
-				{
-					"name": "Current Conditions",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{aWhereAccessToken}}"
-							}
-						],
-						"body": {},
-						"url": {
-							"raw": "https://api.awhere.com/v2/weather/fields/field1/currentconditions",
-							"protocol": "https",
-							"host": [
-								"api",
-								"awhere",
-								"com"
-							],
-							"path": [
-								"v2",
-								"weather",
-								"fields",
-								"field1",
-								"currentconditions"
-							]
-						},
-						"description": "####Request\nThis API call provides a snapshot of recent weather using the weather station nearest to the field location.\n\n[Current Conditions Documentation](http://developer.awhere.com/api/reference/weather/current)\n\n_Tip: Remember to use a field ID that exists in your account. By default, this collection uses a default field ID of 'field1'_\n\n\n####Security\nThis API call uses the security Access Token that is retrieved with the \"Get a Token\" request. If you run that request first, it will save a token to Postman and this API will use it automatically. You can also see where the token should normally go by clicking the \"Headers\" tab below. The Authorization header holds the token, replacing the \"{{aWhereAccessToken}}\" part. \n"
-					},
-					"response": []
 				}
 			]
 		},
